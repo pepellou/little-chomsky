@@ -32,17 +32,17 @@ try {
         //    'max_connections' => 5,
         //],
 
-        //'commands' => [
-        //    // Define all paths for your custom commands
-        //    'paths'   => [
-        //        __DIR__ . '/Commands',
-        //    ],
+        'commands' => [
+            // Define all paths for your custom commands
+            'paths'   => [
+                __DIR__ . '/Commands',
+            ],
         //    // Here you can set some command specific parameters
         //    'configs' => [
         //        // e.g. Google geocode/timezone api key for /date command
         //        'date' => ['google_api_key' => 'your_google_api_key_here'],
         //    ],
-        //],
+        ],
 
         // Define all IDs of admin users
         //'admins'       => [
