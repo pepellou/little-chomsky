@@ -1,13 +1,15 @@
-#!/usr/bin/env php
 <?php
 /**
  * README
- * This configuration file is intended to run the bot with the getUpdates method.
+ * This configuration file is intended to run a list of commands with crontab.
  * Uncommented parameters must be filled
- *
- * Bash script:
- * $ while true; do ./getUpdatesCLI.php; done
  */
+
+// Your command(s) to run, pass it just like in a message (arguments supported)
+$commands = [
+    '/whoami',
+    "/echo I'm a bot!",
+];
 
 // Load composer
 require_once __DIR__ . '/vendor/autoload.php';
@@ -23,17 +25,16 @@ $admin_users = [
 
 // Define all paths for your custom commands in this array (leave as empty array if not used)
 $commands_paths = [
-  __DIR__ . '/Commands/',
+//    __DIR__ . '/Commands/',
 ];
 
 // Enter your MySQL database credentials
-$mysql_credentials = [
-   'host'     => 'localhost',
-   'port'     => 3306, // optional
-   'user'     => 'chomsky',
-   'password' => 'L1ttl3_Ch0msky.',
-   'database' => 'chomsky',
-];
+//$mysql_credentials = [
+//    'host'     => 'localhost',
+//    'user'     => 'dbuser',
+//    'password' => 'dbpass',
+//    'database' => 'dbname',
+//];
 
 try {
     // Create Telegram API object
@@ -46,7 +47,7 @@ try {
     $telegram->enableAdmins($admin_users);
 
     // Enable MySQL
-    $telegram->enableMySql($mysql_credentials);
+    //$telegram->enableMySql($mysql_credentials);
 
     // Logging (Error, Debug and Raw Updates)
     //Longman\TelegramBot\TelegramLog::initErrorLog(__DIR__ . "/{$bot_username}_error.log");
@@ -60,8 +61,8 @@ try {
     //$telegram->setDownloadPath(__DIR__ . '/Download');
     //$telegram->setUploadPath(__DIR__ . '/Upload');
 
-    // Here you can set some command specific parameters
-    // e.g. Google geocode/timezone api key for /date command
+    // Here you can set some command specific parameters,
+    // e.g. Google geocode/timezone api key for /date command:
     //$telegram->setCommandConfig('date', ['google_api_key' => 'your_google_api_key_here']);
 
     // Botan.io integration
@@ -70,21 +71,16 @@ try {
     // Requests Limiter (tries to prevent reaching Telegram API limits)
     $telegram->enableLimiter();
 
-    // Handle telegram getUpdates request
-    $server_response = $telegram->handleGetUpdates();
+    // Run user selected commands
+    $telegram->runCommands($commands);
 
-    if ($server_response->isOk()) {
-        $update_count = count($server_response->getResult());
-        echo date('Y-m-d H:i:s', time()) . ' - Processed ' . $update_count . ' updates';
-    } else {
-        echo date('Y-m-d H:i:s', time()) . ' - Failed to fetch updates' . PHP_EOL;
-        echo $server_response->printError();
-    }
 } catch (Longman\TelegramBot\Exception\TelegramException $e) {
-    echo $e->getMessage();
+    // Silence is golden!
+    //echo $e;
     // Log telegram errors
     Longman\TelegramBot\TelegramLog::error($e);
 } catch (Longman\TelegramBot\Exception\TelegramLogException $e) {
-    // Catch log initialisation errors
-    echo $e->getMessage();
+    // Silence is golden!
+    // Uncomment this to catch log initialisation errors
+    //echo $e;
 }

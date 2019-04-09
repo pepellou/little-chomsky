@@ -1,5 +1,22 @@
 {
+    "name": "pepellou/little-chomsky",
+    "type": "project",
+    "description": "A telegram bot for USC German Philology students to get info on their subjects, teachers, exams, etc",
+    "keywords": ["telegram", "bot"],
+    "license": "MIT",
+    "homepage": "https://github.com/pepellou/little-chomsky",
+    "support": {
+        "issues": "https://github.com/pepellou/little-chomsky/issues",
+        "source": "https://github.com/pepellou/little-chomsky"
+    },
+    "authors": [
+        {
+            "name": "pepellou",
+            "homepage": "https://github.com/pepellou/little-chomsky/graphs/contributors",
+            "role": "Developer"
+        }
+    ],
     "require": {
-        "longman/telegram-bot": "^0.55.1"
+        "php-telegram-bot/telegram-bot-manager": "*"
     }
 }
