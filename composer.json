@@ -21,5 +21,8 @@
     },
     "autoload": {
         "classmap": ["./Chomsky"]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
     }
 }
