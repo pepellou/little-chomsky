@@ -59,17 +59,17 @@ try {
         ],
 
         // Logging (Error, Debug and Raw Updates)
-        //'logging'  => [
-        //    'debug'  => __DIR__ . "/{$bot_username}_debug.log",
-        //    'error'  => __DIR__ . "/{$bot_username}_error.log",
-        //    'update' => __DIR__ . "/{$bot_username}_update.log",
-        //],
+        'logging'  => [
+            'debug'  => __DIR__ . "/{$bot_username}_debug.log",
+            'error'  => __DIR__ . "/{$bot_username}_error.log",
+            'update' => __DIR__ . "/{$bot_username}_update.log",
+        ],
 
         // Set custom Upload and Download paths
-        //'paths'    => [
-        //    'download' => __DIR__ . '/Download',
-        //    'upload'   => __DIR__ . '/Upload',
-        //],
+        'paths'    => [
+            'download' => __DIR__ . '/Download',
+            'upload'   => __DIR__ . '/Upload',
+        ],
 
         // Botan.io integration
         //'botan' => [

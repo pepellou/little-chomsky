@@ -13,6 +13,7 @@ namespace Longman\TelegramBot\Commands\SystemCommands;
 use Longman\TelegramBot\Commands\SystemCommand;
 use Longman\TelegramBot\Conversation;
 use Longman\TelegramBot\Request;
+use Chomsky\Chomsky;
 
 /**
  * Generic message command
@@ -61,17 +62,32 @@ class GenericmessageCommand extends SystemCommand
      */
     public function execute()
     {
-        //If a conversation is busy, execute the conversation command after handling the message
+        $message = $this->getMessage();
+
         $conversation = new Conversation(
-            $this->getMessage()->getFrom()->getId(),
-            $this->getMessage()->getChat()->getId()
+            $message->getFrom()->getId(),
+            $message->getChat()->getId()
         );
 
-        //Fetch conversation command if it exists and execute it
         if ($conversation->exists() && ($command = $conversation->getCommand())) {
             return $this->telegram->executeCommand($command);
         }
 
-        return Request::emptyResponse();
+        $chat_id    = $message->getChat()->getId();
+        $message_id = $message->getMessageId();
+
+        $data = [
+            'chat_id'             => $chat_id,
+            'reply_to_message_id' => $message_id,
+        ];
+
+        Request::sendChatAction([
+            'chat_id' => $chat_id,
+            'action'  => 'typing',
+        ]);
+
+        $answer = Chomsky::talk($message->getText());
+        $data['text'] = $answer;
+        return Request::sendMessage($data);
     }
 }

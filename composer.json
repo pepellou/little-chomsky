@@ -18,5 +18,8 @@
     ],
     "require": {
         "php-telegram-bot/telegram-bot-manager": "*"
+    },
+    "autoload": {
+        "classmap": ["./Chomsky"]
     }
 }
