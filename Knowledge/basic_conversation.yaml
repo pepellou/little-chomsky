@@ -1,0 +1,17 @@
+rules:
+    - input: /q
+      answer:
+          - Grazas pola conversa. Vémonos!
+          - Deica logo, un gusto conversar contigo
+    - input: Ola
+      answer:
+          - Ola!
+          - Ola!!
+          - Ola, que tal? :-)
+          - Que tal?
+    - input: Que tal?
+      answer_same_as: Ola
+    - input: Boas
+      answer_same_as: Ola
+    - input: Bo dia
+      answer_same_as: Ola

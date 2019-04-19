@@ -5,7 +5,7 @@ declare(strict_types=1);
 use PHPUnit\Framework\TestCase;
 use Chomsky\Chomsky;
 
-final class EmailTest extends TestCase
+final class BasicConversationTest extends TestCase
 {
     /**
      * @dataProvider stuffThatChomskyShouldNotUnderstand
@@ -18,11 +18,40 @@ final class EmailTest extends TestCase
         );
     }
 
+    /**
+     * @dataProvider greetings
+     */
+    public function testShouldUnderstandGreetings($greeting): void
+    {
+        $this->assertNotEquals(
+            "Non entendo o que queres dicir (${greeting})",
+            Chomsky::talk($greeting)
+        );
+    }
+
+    /*
+     * @setupBeforeClass
+     */
+    public static function setupBeforeClass() : void
+    {
+        Chomsky::learnFromKnowledgeFolder();
+    }
+
     public function stuffThatChomskyShouldNotUnderstand()
     {
         return $this->listToDataSets([
             'Something',
             'asdfg',
+        ]);
+    }
+
+    public function greetings()
+    {
+        return $this->listToDataSets([
+            'Ola',
+            'Que tal?',
+            'Boas',
+            'Bo dia',
         ]);
     }
 
