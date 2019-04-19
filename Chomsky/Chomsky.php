@@ -4,12 +4,16 @@ declare(strict_types=1);
 
 namespace Chomsky;
 
+use Symfony\Component\Yaml\Yaml;
+
 
 final class Chomsky {
 
+    private static $rules = [ ];
+
     public static function learn($knowledge_file) : void
     {
-        // TODO do
+        self::$rules = Yaml::parseFile('Knowledge/' . $knowledge_file);
     }
 
     public static function talk($text) : string
@@ -31,44 +35,18 @@ final class Chomsky {
 
     private static function applyRule($text, $rule) : string
     {
-        if (isset($rule['redirect'])) {
-            return self::talk($rule['redirect']);
+        if (isset($rule['answer_same_as'])) {
+            return self::talk($rule['answer_same_as']);
         }
         if (isset($rule['answer'])) {
             if (is_string($rule['answer'])) {
                 return $rule['answer'];
             }
             if (is_array($rule['answer'])) {
-                return $rule['answer'][rand(0, count($rule['answer']))];
+                return $rule['answer'][rand(0, count($rule['answer']) - 1)];
             }
         }
         return "Non entendo o que queres dicir (${text})";
     }
-
-    private static $rules = [
-        'basic_conversation' => [
-            [
-                'input'  => 'Ola',
-                'answer' => [
-                    'Ola!',
-                    'Ola!!',
-                    'Ola, que tal? :-)',
-                    'Que tal?',
-                ]
-            ],
-            [
-                'input'    => 'Que tal?',
-                'redirect' => 'Ola'
-            ],
-            [
-                'input'    => 'Boas',
-                'redirect' => 'Ola'
-            ],
-            [
-                'input'    => 'Bo dia',
-                'redirect' => 'Ola'
-            ],
-        ]
-    ];
 
 }

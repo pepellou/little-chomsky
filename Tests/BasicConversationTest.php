@@ -34,7 +34,7 @@ final class BasicConversationTest extends TestCase
      */
     public static function setupBeforeClass() : void
     {
-        Chomsky::learn('basic_conversation.yml');
+        Chomsky::learn('basic_conversation.yaml');
     }
 
     public function stuffThatChomskyShouldNotUnderstand()
