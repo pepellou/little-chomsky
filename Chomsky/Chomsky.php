@@ -11,18 +11,23 @@ final class Chomsky {
 
     private static $rules = [ ];
 
+    public static function learnFromKnowledgeFolder() : void
+    {
+        foreach (Yaml::parseFile('Knowledge/list.yaml')['files'] as $knowledge_file) {
+            self::learn($knowledge_file);
+        }
+    }
+
     public static function learn($knowledge_file) : void
     {
-        self::$rules = Yaml::parseFile('Knowledge/' . $knowledge_file);
+        array_push(self::$rules, ...Yaml::parseFile('Knowledge/' . $knowledge_file . '.yaml')['rules']);
     }
 
     public static function talk($text) : string
     {
-        foreach (self::$rules as $category => $rules) {
-            foreach ($rules as $rule) {
-                if (self::ruleApplies($text, $rule)) {
-                    return self::applyRule($text, $rule);
-                }
+        foreach (self::$rules as $rule) {
+            if (self::ruleApplies($text, $rule)) {
+                return self::applyRule($text, $rule);
             }
         }
         return 'Non entendo o que queres dicir (' . $text . ')';

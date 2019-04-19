@@ -1,4 +1,8 @@
 rules:
+    - input: /q
+      answer:
+          - Grazas pola conversa. Vémonos!
+          - Deica logo, un gusto conversar contigo
     - input: Ola
       answer:
           - Ola!
