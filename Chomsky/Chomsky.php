@@ -42,7 +42,7 @@ final class Chomsky {
                 return $rule['answer'][rand(0, count($rule['answer']))];
             }
         }
-        return null;
+        return "Non entendo o que queres dicir (${text})";
     }
 
     private static $rules = [
