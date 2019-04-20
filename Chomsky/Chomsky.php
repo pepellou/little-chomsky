@@ -43,7 +43,7 @@ final class Chomsky {
         self::$_captures = [];
 
         if ($rule['input'] == '/q') {
-            return $input == '/q';
+            return $text == '/q';
         }
 
         $input = [];
@@ -86,11 +86,19 @@ final class Chomsky {
 
     public static function cleanInput($text) : string
     {
+        if (self::isCommand($text)) {
+            return $text;
+        }
         $words = preg_split("/\s+/", $text);
         $text = implode(" ", $words);
         $text = preg_replace("/[^a-zA-Z0-9\s_ñÑáéíóúÁÉÍÓÚ]/", "", $text);
 
         return $text;
+    }
+
+    private static function isCommand($text) : bool
+    {
+        return $text[0] == '/';
     }
 
 }

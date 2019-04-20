@@ -29,6 +29,14 @@ final class BasicConversationTest extends TestCase
         );
     }
 
+    public function testShouldUnderstandQuitCommand(): void
+    {
+        $this->assertNotEquals(
+            "Non entendo o que queres dicir (/q)",
+            Chomsky::talk('/q')
+        );
+    }
+
     /*
      * @setupBeforeClass
      */
