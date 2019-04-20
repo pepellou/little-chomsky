@@ -1,0 +1,4 @@
+telegram:
+    api_key:  YOUR-TELEGRAM-API-KEY
+    username: YOUR-BOT-NAME
+

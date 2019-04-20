@@ -12,7 +12,6 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 use Chomsky\Chomsky;
-use Symfony\Component\Yaml\Yaml;
 
 Chomsky::learnFromKnowledgeFolder();
 

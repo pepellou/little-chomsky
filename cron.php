@@ -14,9 +14,13 @@ $commands = [
 // Load composer
 require_once __DIR__ . '/vendor/autoload.php';
 
+use Symfony\Component\Yaml\Yaml;
+
+$config = Yaml::parseFile('config.yaml');
+
 // Add you bot's API key and name
-$bot_api_key  = '877772552:AAGTxeFlJgnE4pFTfeAKlp3hqYDCUxynZaM';
-$bot_username = 'LittleChomskyBot';
+$bot_api_key  = $config['telegram']['api_key'];
+$bot_username = $config['telegram']['username'];
 
 // Define all IDs of admin users in this array (leave as empty array if not used)
 $admin_users = [
