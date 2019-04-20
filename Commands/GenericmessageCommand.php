@@ -86,6 +86,8 @@ class GenericmessageCommand extends SystemCommand
             'action'  => 'typing',
         ]);
 
+        Chomsky::learnFromKnowledgeFolder();
+
         $answer = Chomsky::talk($message->getText());
         $data['text'] = $answer;
         return Request::sendMessage($data);
