@@ -1,0 +1,8 @@
+rules:
+    - input: Es un bot?
+      answer:
+          - Efectivamente son
+          - Sip
+    - input: Es mais listo que _?
+      answer: Por suposto que son mais listo que <input>!
+
