@@ -84,7 +84,7 @@ final class Chomsky {
     {
         $words = preg_split("/\s+/", $text);
         $text = implode(" ", $words);
-        $text = preg_replace("/[^a-zA-Z0-9\s_]/", "", $text);
+        $text = preg_replace("/[^a-zA-Z0-9\s_ñÑáéíóúÁÉÍÓÚ]/", "", $text);
 
         return $text;
     }
