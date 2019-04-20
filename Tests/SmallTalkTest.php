@@ -23,7 +23,7 @@ final class SmallTalkTest extends TestCase
      */
     public function testWithMultipleVariables($randomValue1, $randomValue2): void
     {
-        $answer = Chomsky::talk("Prefires ${randomValue1} o ${randomValue2}?");
+        $answer = Chomsky::talk("Prefires ${randomValue1} ou ${randomValue2}?");
 
         $this->assertTrue(
             $answer == "Prefiro ${randomValue1}" ||
