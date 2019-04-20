@@ -15,6 +15,8 @@ use Chomsky\Chomsky;
 
 Chomsky::learnFromKnowledgeFolder();
 
+$term = `stty -g`;
+system("stty -icanon -echo");
 
 echo "         __                                                  \n";
 echo " _(\\    |@@|                                                  \n";
@@ -34,9 +36,49 @@ $input = 'Ola';
 
 while ($input != '/q') {
     echo "\n        [ti] $ ";
-    $input = readline();
+
+    $input = '';
+    $enter = false;
+    $escaped = false;
+    $escape_sequence_left = null;
+    $escape_sequence_right = null;
+
+    while (!$enter && $c = fread(STDIN, 1)) {
+        if (ord($c) == 10) {
+            $enter = true;
+            echo "\n";
+        } else {
+            if (ord($c) == 27) {
+                $escaped = true;
+                $escape_sequence_left = null;
+                $escape_sequence_right = null;
+            } elseif ($escaped) {
+                if (is_null($escape_sequence_left)) {
+                    $escape_sequence_left = ord($c);
+                } else {
+                    $escape_sequence_right = ord($c);
+                    echo "^";
+                    $escaped = false;
+                }
+            } else {
+                if (ord($c) == 10) {
+                    $input = substr($input, count($input) - 2);
+system("stty '" . $term . "'");
+                    echo chr(8);
+system("stty -icanon -echo");
+                } else {
+                    echo $c;
+                    $input = $input . $c;
+                }
+            }
+        }
+    }
+
     echo " [chomskiño] $ ";
     echo Chomsky::talk($input);
 }
 
 echo "\n\n";
+
+system("stty '" . $term . "'");
+
