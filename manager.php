@@ -11,13 +11,17 @@
 // Load composer
 require_once __DIR__ . '/vendor/autoload.php';
 
+use Symfony\Component\Yaml\Yaml;
+
+$config = Yaml::parseFile('config.yaml');
+
 // Add you bot's username (also to be used for log file names)
-$bot_username = 'LittleChomskyBot'; // Without "@"
+$bot_username = $config['telegram']['username']; // Without "@"
 
 try {
     $bot = new TelegramBot\TelegramBotManager\BotManager([
         // Add you bot's API key and name
-        'api_key'      => '877772552:AAGTxeFlJgnE4pFTfeAKlp3hqYDCUxynZaM',
+        'api_key'      => $config['telegram']['api_key'],
         'bot_username' => $bot_username,
 
         // Secret key required to access the webhook

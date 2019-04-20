@@ -12,12 +12,19 @@ final class Chomsky {
     private static $rules = [ ];
     private static $_input = "";
     private static $_captures = [ ];
+    private static $_alreadyLearnt = false;
 
     public static function learnFromKnowledgeFolder() : void
     {
+        if (self::$_alreadyLearnt) {
+            return;
+        }
+
         foreach (Yaml::parseFile('Knowledge/list.yaml')['files'] as $knowledge_file) {
             self::learn($knowledge_file);
         }
+
+        self::$_alreadyLearnt = true;
     }
 
     public static function learn($knowledge_file) : void
