@@ -56,7 +56,7 @@ final class Chomsky {
     {
         $answer = "Non entendo o que queres dicir (${text})";
         if (isset($rule['answer_same_as'])) {
-            $answer = self::talk($rule['answer_same_as']);
+            $answer = self::talk(self::expandVariables($rule['answer_same_as']));
         } elseif (isset($rule['answer'])) {
             if (is_string($rule['answer'])) {
                 $answer = $rule['answer'];
@@ -65,19 +65,23 @@ final class Chomsky {
             }
         }
 
+        return self::expandVariables($answer);
+    }
+
+    private static function expandVariables($text)
+    {
         $num_captures = count(self::$_captures);
         if ($num_captures > 1) {
             if ($num_captures == 2) {
-                $answer = str_replace("<_>", self::$_captures[1], $answer);
+                $text = str_replace("<_>", self::$_captures[1], $text);
             } else {
-                $answer = str_replace("<_>", self::$_captures[1], $answer);
+                $text = str_replace("<_>", self::$_captures[1], $text);
                 for ($i = 1; $i < $num_captures; $i++) {
-                    $answer = str_replace("<_/${i}>", self::$_captures[$i], $answer);
+                    $text = str_replace("<_/${i}>", self::$_captures[$i], $text);
                 }
             }
         }
-
-        return $answer;
+        return $text;
     }
 
     public static function cleanInput($text) : string

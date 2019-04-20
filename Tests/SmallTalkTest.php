@@ -32,6 +32,20 @@ final class SmallTalkTest extends TestCase
         );
     }
 
+    /**
+     * @dataProvider randomCouples
+     */
+    public function testWithMultipleVariablesAndRedirection($randomValue1, $randomValue2): void
+    {
+        $answer = Chomsky::talk("Queres ${randomValue1} ou ${randomValue2}?");
+
+        $this->assertTrue(
+            $answer == "Prefiro ${randomValue1}" ||
+            $answer == "Prefiro ${randomValue2}",
+            "Answer expected to be 'Prefiro ${randomValue1}' or 'Prefiro ${randomValue2}' but was '${answer}'"
+        );
+    }
+
     /*
      * @setupBeforeClass
      */

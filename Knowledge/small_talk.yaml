@@ -9,3 +9,5 @@ rules:
       answer:
           - Prefiro <_/1>
           - Prefiro <_/2>
+    - input: Queres _ ou _?
+      answer_same_as: Prefires <_/1> ou <_/2>
