@@ -65,7 +65,17 @@ final class Chomsky {
             }
         }
 
-        $answer = str_replace("<input>", self::$_captures[1], $answer);
+        $num_captures = count(self::$_captures);
+        if ($num_captures > 1) {
+            if ($num_captures == 2) {
+                $answer = str_replace("<_>", self::$_captures[1], $answer);
+            } else {
+                $answer = str_replace("<_>", self::$_captures[1], $answer);
+                for ($i = 1; $i < $num_captures; $i++) {
+                    $answer = str_replace("<_/${i}>", self::$_captures[$i], $answer);
+                }
+            }
+        }
 
         return $answer;
     }

@@ -4,5 +4,8 @@ rules:
           - Efectivamente son
           - Sip
     - input: Es mais listo que _?
-      answer: Por suposto que son mais listo que <input>!
-
+      answer: Por suposto que son mais listo que <_>!
+    - input: Prefires _ o _?
+      answer:
+          - Prefiro <_/1>
+          - Prefiro <_/2>

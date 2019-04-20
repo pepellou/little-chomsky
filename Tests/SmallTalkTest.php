@@ -18,6 +18,20 @@ final class SmallTalkTest extends TestCase
         );
     }
 
+    /**
+     * @dataProvider randomCouples
+     */
+    public function testWithMultipleVariables($randomValue1, $randomValue2): void
+    {
+        $answer = Chomsky::talk("Prefires ${randomValue1} o ${randomValue2}?");
+
+        $this->assertTrue(
+            $answer == "Prefiro ${randomValue1}" ||
+            $answer == "Prefiro ${randomValue2}",
+            "Answer expected to be 'Prefiro ${randomValue1}' or 'Prefiro ${randomValue2}' but was '${answer}'"
+        );
+    }
+
     /*
      * @setupBeforeClass
      */
@@ -33,6 +47,16 @@ final class SmallTalkTest extends TestCase
             'HAL9000',
             'HAL 9000',
         ]);
+    }
+
+    public function randomCouples()
+    {
+        return [
+            [ 'Chomsky', 'Asimov' ],
+            [ 'HAL9000', 'Marvin' ],
+            [ 'coding', 'playing chess' ],
+            [ 'coffee', 'tea' ],
+        ];
     }
 
     private function listToDataSets($list) {
