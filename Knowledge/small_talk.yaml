@@ -3,11 +3,11 @@ rules:
       answer:
           - Efectivamente son
           - Sip
-    - input: Es mais listo que _?
-      answer: Por suposto que son mais listo que <_>!
-    - input: Prefires _ ou _?
+    - input: Es mais listo que {mengano}?
+      answer: Por suposto que son mais listo que {mengano}!
+    - input: Prefires {esto} ou {aquelo}?
       answer:
-          - Prefiro <_/1>
-          - Prefiro <_/2>
-    - input: Queres _ ou _?
-      answer_same_as: Prefires <_/1> ou <_/2>
+          - Prefiro {esto}
+          - Prefiro {aquelo}
+    - input: Queres {esto} ou {aquelo}?
+      answer_same_as: Prefires {esto} ou {aquelo}

@@ -47,16 +47,32 @@ final class Chomsky {
     private static function ruleApplies($text, $rule) : bool
     {
         self::$_input = $text;
-        self::$_captures = [];
 
         if ($rule['input'] == '/q') {
             return $text == '/q';
         }
 
-        $input = [];
-        $matchesRule = preg_match("/^" . str_replace("_", "(.+)", $rule['input']) . "$/i", $text, self::$_captures) != false;
+        $input = $rule['input'];
 
-        return $matchesRule;
+        $variables = [];
+        preg_match_all("/{([^}]+)}/", $input, $variables);
+
+        self::$_captures = [];
+        $tempCaptures = [];
+
+        foreach($variables[1] as $variable) {
+            $input = str_replace('{' . $variable . '}', "(?<${variable}>.+)", $input);
+        }
+
+        if (preg_match("/^${input}$/i", $text, $tempCaptures) == false) {
+            return false;
+        }
+
+        foreach($variables[1] as $variable) {
+            self::$_captures[$variable] = $tempCaptures[$variable];
+        }
+
+        return true;
     }
 
     private static function applyRule($text, $rule) : string
@@ -77,16 +93,8 @@ final class Chomsky {
 
     private static function expandVariables($text)
     {
-        $num_captures = count(self::$_captures);
-        if ($num_captures > 1) {
-            if ($num_captures == 2) {
-                $text = str_replace("<_>", self::$_captures[1], $text);
-            } else {
-                $text = str_replace("<_>", self::$_captures[1], $text);
-                for ($i = 1; $i < $num_captures; $i++) {
-                    $text = str_replace("<_/${i}>", self::$_captures[$i], $text);
-                }
-            }
+        foreach (self::$_captures as $variable => $value) {
+            $text = str_replace('{' . $variable . '}', $value, $text);
         }
         return $text;
     }
