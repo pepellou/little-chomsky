@@ -1,0 +1,5 @@
+rules:
+    - input: Quen imparte {subject}?
+      answer: "{teachers}"
+      where:
+          teachers: subjects[name={name}].teachers

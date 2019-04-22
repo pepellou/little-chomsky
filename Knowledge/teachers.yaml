@@ -1,0 +1,119 @@
+teachers:
+
+    - name: Sebastian
+      lastname: Windisch 
+      url: http://www.usc.es/gl/centros/filoloxia/profesor.html?Num_Puesto=22289&Num_Persona=679265&ano=69
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      phone: 881 811 000 ext. 
+      email: sebastian.windisch@usc.es
+      category: Lector
+
+    - name: Victor
+      lastname: Millet Schröder
+      url: http://www.usc.es/gl/centros/filoloxia/profesor.html?Num_Puesto=8859&Num_Persona=2083&ano=69
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      phone: 881 811 000 ext. 881811901
+      email: victor.millet@usc.es
+      category: Profesor/a: Catedrático/a de Universidade
+
+    - name: Emilio
+      lastname: González Miranda
+      url: http://www.usc.es/gl/centros/filoloxia/profesor.html?Num_Puesto=7307&Num_Persona=876&ano=69
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      phone: 881 811 000 ext. 11834
+      email: emilio.gonzalez.miranda@usc.es
+      category: Profesor Contratado Doutor
+
+    - name: Carmen
+      lastname: Mellado Blanco
+      url: http://www.usc.es/gl/centros/filoloxia/profesor.html?Num_Puesto=336&Num_Persona=342&ano=69
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      phone: 881 811 000 ext. 11859
+      email: c.mellado@usc.es
+      category: Titular de Universidade
+
+    - name: Sina Kristin
+      lastname: Menrad 
+      url: http://www.usc.es/gl/centros/filoloxia/profesor.html?Num_Puesto=16672&Num_Persona=641532&ano=69
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      phone: 881 811 000 ext. 11864
+      email: sina.menrad@usc.es
+      category: Lector
+
+    - name: Rosa Marta
+      lastname: Gómez Pato
+      url: http://www.usc.es/gl/centros/filoloxia/profesor.html?Num_Puesto=8855&Num_Persona=897&ano=69
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      phone: 881 811 000 ext. 11839
+      email: gomez.pato@usc.es
+      category: Titular de Universidade
+
+    - name: María Dolores
+      lastname: Sabate Planes
+      url: http://www.usc.es/gl/centros/filoloxia/profesor.html?Num_Puesto=12214&Num_Persona=297&ano=69
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      phone: 881 811 000 ext. 11848
+      email: dolors.sabate.planes@usc.es
+      category: Profesor/a: Catedrático/a de Universidade
+
+    - name: Barbara
+      lastname: Lubke
+      url: http://www.usc.es/gl/centros/filoloxia/profesor.html?Num_Puesto=19063&Num_Persona=2107&ano=69
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      phone: 881 811 000 ext. 11835
+      email: barbara.lubke@usc.es
+      category: Profesor Contratado Doutor
+
+    - name: Francisco José Servando
+      lastname: García Gondar
+      url: http://www.usc.es/gl/centros/filoloxia/profesor.html?Num_Puesto=18981&Num_Persona=637&ano=69
+      department: Lingua e Literatura Españolas, Teoría da Literatura e Lingüística Xeral
+      area: Lingüística Xeral
+      phone: 881 811 000 ext. 11766
+      email: francisco.garcia@usc.es
+      category: Profesor Contratado Doutor
+
+    - name: María Teresa
+      lastname: Moure Pereiro
+      url: http://www.usc.es/gl/centros/filoloxia/profesor.html?Num_Puesto=194&Num_Persona=209&ano=69
+      department: Lingua e Literatura Españolas, Teoría da Literatura e Lingüística Xeral
+      area: Lingüística Xeral
+      phone: 881 811 000 ext. 11992
+      email: teresa.moure@usc.es
+      category: Titular de Universidade
+
+    - name: Milagros
+      lastname: Fernández Pérez
+      url: http://www.usc.es/gl/centros/filoloxia/profesor.html?Num_Puesto=1301&Num_Persona=1226&ano=69
+      department: Lingua e Literatura Españolas, Teoría da Literatura e Lingüística Xeral
+      area: Lingüística Xeral
+      phone: 881 811 000 ext. 11799
+      email: magos.fernandez.perez@usc.es
+      category: Profesor/a: Catedrático/a de Universidade
+
+    - name: Lara
+      lastname: Lorenzo Herrera
+      url: http://www.usc.es/gl/centros/filoloxia/profesor.html?Num_Puesto=22957&Num_Persona=201303&ano=69
+      department: Lingua e Literatura Españolas, Teoría da Literatura e Lingüística Xeral
+      area: Lingüística Xeral
+      phone: 881 811 000 ext. 
+      email: lara.lorenzo.herrera@usc.es
+      category: Contrato Predoutoral Ministerio
+
+    - name: Ana Isabel
+      lastname: Codesido Garcia
+      url: http://www.usc.es/es/centros/filoloxia/profesor.html?Num_Puesto=7328&Num_Persona=990&ano=69
+      department: Lengua y Literatura Españolas, Teoría de la Literatura y Lingüística General
+      area: Lingüística General
+      phone: 881 811 000 ext. 11776
+      email: ana.codesido@usc.es
+      category: Profesor Contratado Doctor
+

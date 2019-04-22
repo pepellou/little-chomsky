@@ -1,0 +1,5 @@
+rules:
+    - input: Cal é o departamento de {profesor}?
+      answer: O departamento de {profesor} é {departamento}
+      where:
+          - departamento: teachers[name={}]

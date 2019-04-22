@@ -1,0 +1,513 @@
+subjects:
+    - code: G5081321
+      name: Lingua Alemá 6
+      url_info: http://www.usc.es/gl/centros/filoloxia/materia.html?materia=125888
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grao RD 1393/2007
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      centre: Facultade de Filoloxía
+      season: 1º Semestre de Titulacións de Grao/Máster
+      teachers:
+          - Menrad, Sina Kristin
+          - Windisch, Sebastian
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIL_01
+            type: Ordinario
+            class_type: Clase Interactiva Laboratorio
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS02
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS03
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+    - code: G5081322
+      name: Lingua Alemá 7
+      url_info: http://www.usc.es/gl/centros/filoloxia/materia.html?materia=125889
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grao RD 1393/2007
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      centre: Facultade de Filoloxía
+      season: 1º Semestre de Titulacións de Grao/Máster
+      teachers:
+          - Menrad, Sina Kristin
+          - Windisch, Sebastian
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIL_01
+            type: Ordinario
+            class_type: Clase Interactiva Laboratorio
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS02
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS03
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+    - code: G5081323
+      name: Literatura Alemá desde os seus inicios ata o Barroco
+      url_info: http://www.usc.es/gl/centros/filoloxia/materia.html?materia=125890
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grao RD 1393/2007
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      centre: Facultade de Filoloxía
+      season: 1º Semestre de Titulacións de Grao/Máster
+      teachers:
+          - Millet Schröder, Victor
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIS_01
+            type: Ordinario
+            class_type: Clase Interactiva Seminario
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS02
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS03
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+    - code: G5081324
+      name: Lingua Alemá 8
+      url_info: http://www.usc.es/gl/centros/filoloxia/materia.html?materia=125891
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grao RD 1393/2007
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      centre: Facultade de Filoloxía
+      season: 2º Semestre de Titulacións de Grao/Máster
+      teachers:
+          - González Miranda, Emilio
+          - Menrad, Sina Kristin
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIL_01
+            type: Ordinario
+            class_type: Clase Interactiva Laboratorio
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS02
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+    - code: G5081325
+      name: Semántica e Lexicoloxía Alemás
+      url_info: http://www.usc.es/gl/centros/filoloxia/materia.html?materia=125892
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grao RD 1393/2007
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      centre: Facultade de Filoloxía
+      season: 2º Semestre de Titulacións de Grao/Máster
+      teachers:
+          - Mellado Blanco, Carmen
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIS_01
+            type: Ordinario
+            class_type: Clase Interactiva Seminario
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS02
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS03
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+    - code: G5081326
+      name: Tradución directa e inversa 1
+      url_info: http://www.usc.es/gl/centros/filoloxia/materia.html?materia=125893
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grao RD 1393/2007
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      centre: Facultade de Filoloxía
+      season: 2º Semestre de Titulacións de Grao/Máster
+      teachers:
+          - Gómez Pato, Rosa María
+          - Menrad, Sina Kristin
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIS_01
+            type: Ordinario
+            class_type: Clase Interactiva Seminario
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS02
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS03
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+    - code: G5081351
+      name: Literatura en lingua alemá desde a postguerra ata os anos 80
+      url_info: http://www.usc.es/gl/centros/filoloxia/materia.html?materia=125918
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grao RD 1393/2007
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      centre: Facultade de Filoloxía
+      season: 1º Semestre de Titulacións de Grao/Máster
+      teachers:
+          - Sabate Planes, María Dolores
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIS_01
+            type: Ordinario
+            class_type: Clase Interactiva Seminario
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+    - code: G5081352
+      name: Literatura en lingua alemá desde 1989
+      url_info: http://www.usc.es/gl/centros/filoloxia/materia.html?materia=125919
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grao RD 1393/2007
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      centre: Facultade de Filoloxía
+      season: 2º Semestre de Titulacións de Grao/Máster
+      teachers:
+          - Gómez Pato, Rosa María
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIS_01
+            type: Ordinario
+            class_type: Clase Interactiva Seminario
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+    - code: G5081353
+      name: Lingüística contrastiva alemá
+      url_info: http://www.usc.es/gl/centros/filoloxia/materia.html?materia=125920
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grao RD 1393/2007
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      centre: Facultade de Filoloxía
+      season: 1º Semestre de Titulacións de Grao/Máster
+      teachers:
+          - Lubke, Barbara
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIS_01
+            type: Ordinario
+            class_type: Clase Interactiva Seminario
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+    - code: G5081451
+      name: Variedades do alemán
+      url_info: http://www.usc.es/gl/centros/filoloxia/materia.html?materia=125961
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grao RD 1393/2007
+      department: Filoloxía Inglesa e Alemá
+      area: Filoloxía Alemá
+      centre: Facultade de Filoloxía
+      season: 2º Semestre de Titulacións de Grao/Máster
+      teachers:
+          - Lubke, Barbara
+          - Windisch, Sebastian
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIS_01
+            type: Ordinario
+            class_type: Clase Interactiva Seminario
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+    - code: G5041605
+      name: Panorámica das ideas lingüísticas
+      url_info: http://www.usc.es/gl/centros/filoloxia/materia.html?materia=125713
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grao RD 1393/2007
+      department: Lingua e Literatura Españolas, Teoría da Literatura e Lingüística Xeral
+      area: Lingüística Xeral
+      centre: Facultade de Filoloxía
+      season: 1º Semestre de Titulacións de Grao/Máster
+      teachers:
+          - García Gondar, Francisco José Servando
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIS_01
+            type: Ordinario
+            class_type: Clase Interactiva Seminario
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS02
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+    - code: G5041606
+      name: Tipoloxía lingüística
+      url_info: http://www.usc.es/gl/centros/filoloxia/materia.html?materia=125714
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grao RD 1393/2007
+      department: Lingua e Literatura Españolas, Teoría da Literatura e Lingüística Xeral
+      area: Lingüística Xeral
+      centre: Facultade de Filoloxía
+      season: 2º Semestre de Titulacións de Grao/Máster
+      teachers:
+          - Moure Pereiro, María Teresa
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIS_01
+            type: Ordinario
+            class_type: Clase Interactiva Seminario
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS02
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS03
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+    - code: G5041607
+      name: Psicolingüística
+      url_info: http://www.usc.es/gl/centros/filoloxia/materia.html?materia=125715
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grao RD 1393/2007
+      department: Lingua e Literatura Españolas, Teoría da Literatura e Lingüística Xeral
+      area: Lingüística Xeral
+      centre: Facultade de Filoloxía
+      season: 1º Semestre de Titulacións de Grao/Máster
+      teachers:
+          - Fernández Pérez, Milagros
+          - Lorenzo Herrera, Lara
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIS_01 (A-L)
+            type: Ordinario
+            class_type: Clase Interactiva Seminario
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /CLIS_02 (M-Z)
+            type: Ordinario
+            class_type: Clase Interactiva Seminario
+            class_schedule: SI
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS02
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS03
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+          - name: Grupo /TI-ECTS04
+            type: Ordinario
+            class_type: Horas de Titorías
+            class_schedule: NON
+            exam_schedule: NON
+    - code: G5041608
+      name: Lingüística computacional
+      url_info: http://www.usc.es/es/centros/filoloxia/materia.html?materia=125716
+      credits:
+          ects: 6.00
+          total: 6.0
+      type: Materia Ordinaria Grado RD 1393/2007
+      department: Lengua y Literatura Españolas, Teoría de la Literatura y Lingüística General
+      area: Lingüística General
+      centre: Facultad de Filología
+      season: 2º Semestre de Titulaciones de Grado/Máster
+      teachers:
+          - Codesido Garcia, Ana Isabel
+      schedule:
+          - name: Grupo /CLE_01
+            type: Ordinario
+            class_type: Clase Expositiva
+            class_schedule: SI
+            exam_schedule: SI
+          - name: Grupo /CLIL_01 (A-L)
+            type: Ordinario
+            class_type: Clase Interactiva Laboratorio
+            class_schedule: SI
+            exam_schedule: NO
+          - name: Grupo /CLIL_02 (M-Z)
+            type: Ordinario
+            class_type: Clase Interactiva Laboratorio
+            class_schedule: SI
+            exam_schedule: NO
+          - name: Grupo /TI-ECTS01
+            type: Ordinario
+            class_type: Horas de Tutorías
+            class_schedule: NO
+            exam_schedule: NO
+          - name: Grupo /TI-ECTS02
+            type: Ordinario
+            class_type: Horas de Tutorías
+            class_schedule: NO
+            exam_schedule: NO
