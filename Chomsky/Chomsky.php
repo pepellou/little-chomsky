@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Chomsky;
 
 use Symfony\Component\Yaml\Yaml;
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 
 
 final class Chomsky {
@@ -13,6 +15,7 @@ final class Chomsky {
     private static $_input = "";
     private static $_captures = [ ];
     private static $_alreadyLearnt = false;
+    private static $_logger = null;
 
     public static function learnFromKnowledgeFolder() : void
     {
@@ -29,6 +32,7 @@ final class Chomsky {
 
     public static function learn($knowledge_file) : void
     {
+        self::getLogger()->warning('Learning rules from ' . $knowledge_file);
         array_push(self::$rules, ...Yaml::parseFile('Knowledge/' . $knowledge_file . '.yaml')['rules']);
     }
 
@@ -114,6 +118,15 @@ final class Chomsky {
     private static function isCommand($text) : bool
     {
         return $text[0] == '/';
+    }
+
+    private static function getLogger() : Logger
+    {
+        if (is_null(self::$_logger)) {
+            self::$_logger = new Logger('chomsky');
+            self::$_logger->pushHandler(new StreamHandler('logs/chomsky.log', Logger::WARNING));
+        }
+        return self::$_logger;
     }
 
 }

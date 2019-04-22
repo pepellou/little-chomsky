@@ -18,7 +18,8 @@
     ],
     "require": {
         "php-telegram-bot/telegram-bot-manager": "*",
-        "symfony/yaml": "^4.2"
+        "symfony/yaml": "^4.2",
+        "monolog/monolog": "^1.24"
     },
     "autoload": {
         "classmap": ["./Chomsky"]
