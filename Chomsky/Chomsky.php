@@ -16,6 +16,7 @@ final class Chomsky {
     private static $_captures = [ ];
     private static $_alreadyLearnt = false;
     private static $_logger = null;
+    private static $_database = [];
 
     public static function learnFromKnowledgeFolder() : void
     {
@@ -92,15 +93,37 @@ final class Chomsky {
             }
         }
 
-        return self::expandVariables($answer);
+        return self::expandVariables($answer, $rule['where']);
     }
 
-    private static function expandVariables($text)
+    private static function expandVariables($text, $where = null)
     {
-        foreach (self::$_captures as $variable => $value) {
-            $text = str_replace('{' . $variable . '}', $value, $text);
+        $variables = [];
+        preg_match_all("/{([^}]+)}/", $text, $variables);
+
+        foreach ($variables[1] as $variable) {
+            if (isset(self::$_captures[$variable])) {
+                $text = str_replace('{' . $variable . '}', self::$_captures[$variable], $text);
+            } elseif (!is_null($where) && isset($where[$variable])) {
+
+            }
         }
         return $text;
+    }
+
+    public static function remember($key, $value) : void
+    {
+        self::$_database[$key] = $value;
+    }
+
+    public static function evaluate($expression) : string
+    {
+        return $expression->evaluate();
+    }
+
+    public static function remind($key)
+    {
+        return self::$_database[$key];
     }
 
     public static function cleanInput($text) : string
