@@ -10,7 +10,7 @@ use Chomsky\Chomsky;
 
 final class Expression {
 
-    private $value = "";
+    private $value = null;
 
     public function __construct($expression)
     {
@@ -19,12 +19,21 @@ final class Expression {
 
     public function evaluate() : string
     {
-        return Value::create($this->value)->__toString();
+        return $this->value->__toString();
     }
 
     private function parse($expression) : void
     {
-        $this->value = Chomsky::remind($expression);
+        $captures = [];
+        if (preg_match("/^(?<identifier>[a-zA-Z_]+)(?<filter>\[(?<filter_key>[^=]+)=(?<filter_value>[^\]]+)\])?$/i", $expression, $captures) == false) {
+            return;
+        }
+
+        $this->value = Value::create(Chomsky::remind($captures['identifier']));
+
+        if (isset($captures['filter']) && $this->value->canFilter()) {
+            $this->value->filter($captures['filter_key'], $captures['filter_value']);
+        }
     }
 
 

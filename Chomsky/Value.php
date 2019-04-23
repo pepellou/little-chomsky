@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Chomsky;
 
-class Value {
+abstract class Value {
 
     public static function create($value) : Value
     {
@@ -18,5 +18,11 @@ class Value {
             return new ObjectValue($value);
         }
     }
+
+    public abstract function canFilter() : bool;
+
+    public abstract function filter($key, $value) : void;
+
+    public abstract function isObject() : bool;
 
 }

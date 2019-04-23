@@ -38,13 +38,40 @@ final class ExpressionTalkTest extends TestCase
     /**
      * @dataProvider listsOfObjects
      */
-    public function testCanEvaluateAListOfObject($listName, $objects, $expectedOutput): void
+    public function testCanEvaluateAListOfObjects($listName, $objects, $expectedOutput): void
     {
         Chomsky::remember($listName, $objects);
 
         $this->assertEquals(
             $expectedOutput,
             Chomsky::evaluate(new Expression($listName))
+        );
+    }
+
+    public function testCanEvaluateAListOfObjectsFilteredByField(): void
+    {
+        $anObject = new stdclass();
+        $anObject->name = 'a name';
+        $anObject->value = 42;
+
+        $anotherObject = new stdclass();
+        $anotherObject->name = 'another name';
+        $anotherObject->value = 2;
+
+        $yetAnotherObject = new stdclass();
+        $yetAnotherObject->name = 'yet another name';
+        $yetAnotherObject->value = 4;
+
+        Chomsky::remember('aName', [ $anObject, $anotherObject, $yetAnotherObject ]);
+
+        $this->assertEquals(
+            '{name:a name,value:42}',
+            Chomsky::evaluate(new Expression('aName[name=a name]'))
+        );
+
+        $this->assertEquals(
+            '{name:another name,value:2}',
+            Chomsky::evaluate(new Expression('aName[name=another name]'))
         );
     }
 

@@ -22,4 +22,18 @@ final class StringValue extends Value {
         return $this->_value;
     }
 
+    public function canFilter() : bool
+    {
+        return false;
+    }
+
+    public function filter($key, $value) : void
+    {
+    }
+
+    public function isObject() : bool
+    {
+        return false;
+    }
+
 }

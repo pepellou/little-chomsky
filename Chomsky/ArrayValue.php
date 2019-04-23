@@ -9,13 +9,13 @@ use Chomsky\Config;
 
 final class ArrayValue extends Value {
 
-    private $_value = [];
+    private $_values = [];
 
     public function __construct($array)
     {
-        $this->_value = [];
+        $this->_values = [];
         foreach($array as $value) {
-            $this->_value []= Value::create($value);
+            $this->_values []= Value::create($value);
         }
     }
 
@@ -25,7 +25,7 @@ final class ArrayValue extends Value {
             function($value) {
                 return $value->__toString();
             },
-            $this->_value
+            $this->_values
         );
 
         $lastOne = array_pop($values);
@@ -34,6 +34,29 @@ final class ArrayValue extends Value {
         return $allButLast == ''
            ? $lastOne
            : implode(' ' . Config::AND_SEPARATOR . ' ', [implode(', ', $values), $lastOne ]);
+    }
+
+    public function canFilter() : bool
+    {
+        return true;
+    }
+
+    public function filter($key, $value) : void
+    {
+        $new_values = [];
+
+        foreach ($this->_values as $_value) {
+            if ($_value->isObject() && $_value->getField($key) == $value) {
+                $new_values []= $_value;
+            }
+        }
+
+        $this->_values = $new_values;
+    }
+
+    public function isObject() : bool
+    {
+        return false;
     }
 
 }
