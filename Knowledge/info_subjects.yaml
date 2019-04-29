@@ -1,5 +1,57 @@
 rules:
-    - input: Quen imparte {subject}?
-      answer: "{teachers}"
-      where:
-          teachers: subjects[name={name}].teachers
+    - input: Quen imparte Lingua Alemá 6?
+      answer: Sina Kristin Menrad e Sebastian Windisch
+    - input: Quen imparte Lingua Alemá 7?
+      answer: Sina Kristin Menrad e Sebastian Windisch
+    - input: Quen imparte Literatura Alemá desde os seus inicios ata o Barroco?
+      answer: Victor Millet Schröder
+    - input: Quen imparte Lingua Alemá 8?
+      answer: Emilio González Miranda e Sina Kristin Menrad
+    - input: Quen imparte Semántica e Lexicoloxía Alemás?
+      answer: Carmen Mellado Blanco
+    - input: Quen imparte Tradución directa e inversa 1?
+      answer: Rosa María Gómez Pato e Sina Kristin Menrad
+    - input: Quen imparte Literatura en lingua alemá desde a postguerra ata os anos 80?
+      answer: María Dolores Sabate Planes
+    - input: Quen imparte Literatura en lingua alemá desde 1989?
+      answer: Rosa María Gómez Pato
+    - input: Quen imparte Lingüística contrastiva alemá?
+      answer: Barbara Lubke
+    - input: Quen imparte Variedades do alemán?
+      answer: Barbara Lubke e Sebastian Windisch
+    - input: Quen imparte Panorámica das ideas lingüísticas?
+      answer: Francisco José Servando García Gondar
+    - input: Quen imparte Tipoloxía lingüística?
+      answer: María Teresa Moure Pereiro
+    - input: Quen imparte Psicolingüística?
+      answer: Milagros Fernández Pérez e Lara Lorenzo Herrera
+    - input: Quen imparte Lingüística computacional?
+      answer: Ana Isabel Codesido Garcia
+    - input: Quen dá clases de Lingua Alemá 6?
+      answer: Sina Kristin Menrad e Sebastian Windisch
+    - input: Quen dá clases de Lingua Alemá 7?
+      answer: Sina Kristin Menrad e Sebastian Windisch
+    - input: Quen dá clases de Literatura Alemá desde os seus inicios ata o Barroco?
+      answer: Victor Millet Schröder
+    - input: Quen dá clases de Lingua Alemá 8?
+      answer: Emilio González Miranda e Sina Kristin Menrad
+    - input: Quen dá clases de Semántica e Lexicoloxía Alemás?
+      answer: Carmen Mellado Blanco
+    - input: Quen dá clases de Tradución directa e inversa 1?
+      answer: Rosa María Gómez Pato e Sina Kristin Menrad
+    - input: Quen dá clases de Literatura en lingua alemá desde a postguerra ata os anos 80?
+      answer: María Dolores Sabate Planes
+    - input: Quen dá clases de Literatura en lingua alemá desde 1989?
+      answer: Rosa María Gómez Pato
+    - input: Quen dá clases de Lingüística contrastiva alemá?
+      answer: Barbara Lubke
+    - input: Quen dá clases de Variedades do alemán?
+      answer: Barbara Lubke e Sebastian Windisch
+    - input: Quen dá clases de Panorámica das ideas lingüísticas?
+      answer: Francisco José Servando García Gondar
+    - input: Quen dá clases de Tipoloxía lingüística?
+      answer: María Teresa Moure Pereiro
+    - input: Quen dá clases de Psicolingüística?
+      answer: Milagros Fernández Pérez e Lara Lorenzo Herrera
+    - input: Quen dá clases de Lingüística computacional?
+      answer: Ana Isabel Codesido Garcia

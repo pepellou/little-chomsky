@@ -1,5 +1,40 @@
 rules:
-    - input: Cal é o departamento de {profesor}?
-      answer: O departamento de {profesor} é {departamento}
-      where:
-          - departamento: teachers[name={}]
+    - input: Cal é o departamento de Sebastian Windisch?
+      answer: O departamento de Sebastian Windisch é Filoloxía Inglesa e Alemá
+
+    - input: Cal é o departamento de Victor Millet Schröder?
+      answer: O departamento de Victor Millet Schröder é Filoloxía Inglesa e Alemá
+
+    - input: Cal é o departamento de Emilio González Miranda?
+      answer: O departamento de Emilio González Miranda é Filoloxía Inglesa e Alemá
+
+    - input: Cal é o departamento de Carmen Mellado Blanco?
+      answer: O departamento de Carmen Mellado Blanco é Filoloxía Inglesa e Alemá
+
+    - input: Cal é o departamento de Sina Kristin Menrad?
+      answer: O departamento de Sina Kristin Menrad é Filoloxía Inglesa e Alemá
+
+    - input: Cal é o departamento de Rosa Marta Gómez Pato?
+      answer: O departamento de Rosa Marta Gómez Pato é Filoloxía Inglesa e Alemá
+
+    - input: Cal é o departamento de María Dolores Sabate Planes?
+      answer: O departamento de María Dolores Sabate Planes é Filoloxía Inglesa e Alemá
+
+    - input: Cal é o departamento de Barbara Lubke?
+      answer: O departamento de Barbara Lubke é Filoloxía Inglesa e Alemá
+
+    - input: Cal é o departamento de Francisco José Servando García Gondar?
+      answer: O departamento de Francisco José Servando García Gondar é Lingua e Literatura Españolas, Teoría da Literatura e Lingüística Xeral
+
+    - input: Cal é o departamento de María Teresa Moure Pereiro?
+      answer: O departamento de María Teresa Moure Pereiro é Lingua e Literatura Españolas, Teoría da Literatura e Lingüística Xeral
+
+    - input: Cal é o departamento de Milagros Fernández Pérez?
+      answer: O departamento de Milagros Fernández Pérez é Lingua e Literatura Españolas, Teoría da Literatura e Lingüística Xeral
+
+    - input: Cal é o departamento de Lara Lorenzo Herrera?
+      answer: O departamento de Lara Lorenzo Herrera é Lingua e Literatura Españolas, Teoría da Literatura e Lingüística Xeral
+
+    - input: Cal é o departamento de Ana Isabel Codesido Garcia?
+      answer: O departamento de Ana Isabel Codesido Garcia é Lengua y Literatura Españolas, Teoría de la Literatura y Lingüística General
+
