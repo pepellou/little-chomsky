@@ -57,7 +57,7 @@ final class Chomsky {
             return $text == '/q';
         }
 
-        $input = $rule['input'];
+        $input = self::cleanAccents($rule['input']);
 
         $variables = [];
         preg_match_all("/{([^}]+)}/", $input, $variables);
@@ -134,6 +134,28 @@ final class Chomsky {
         $words = preg_split("/\s+/", $text);
         $text = implode(" ", $words);
         $text = preg_replace("/[^a-zA-Z0-9\s_ñÑáéíóúÁÉÍÓÚ]/", "", $text);
+
+        return self::cleanAccents($text);
+    }
+
+    public static function cleanAccents($text) : string
+    {
+        $accents_replacements = [
+            '/á/' => 'a',
+            '/é/' => 'e',
+            '/í/' => 'i',
+            '/ó/' => 'o',
+            '/ú/' => 'u',
+            '/Á/' => 'A',
+            '/É/' => 'E',
+            '/Í/' => 'I',
+            '/Ó/' => 'O',
+            '/Ú/' => 'U',
+        ];
+
+        foreach ($accents_replacements as $from => $to) {
+            $text = preg_replace($from, $to, $text);
+        }
 
         return $text;
     }
