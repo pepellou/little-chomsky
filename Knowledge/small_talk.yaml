@@ -5,6 +5,8 @@ rules:
           - Sip
     - input: Es mais listo que {mengano}?
       answer: Por suposto que son mais listo que {mengano}!
+    - input: Es mais listo ca {mengano}?
+      answer: Por suposto que son mais listo ca {mengano}!
     - input: Prefires {esto} ou {aquelo}?
       answer:
           - Prefiro {esto}
